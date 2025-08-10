@@ -11,11 +11,12 @@
 		413D34E42E489C23009F6F44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D34E32E489C23009F6F44 /* ContentView.swift */; };
 		413D34E62E489C25009F6F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413D34E52E489C25009F6F44 /* Assets.xcassets */; };
 		413D34E92E489C25009F6F44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413D34E82E489C25009F6F44 /* Preview Assets.xcassets */; };
-		413D34EB2E489C25009F6F44 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D34EA2E489C25009F6F44 /* Persistence.swift */; };
 		413D34EE2E489C25009F6F44 /* DemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 413D34EC2E489C25009F6F44 /* DemoApp.xcdatamodeld */; };
 		413D34F82E489C25009F6F44 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D34F72E489C25009F6F44 /* DemoAppTests.swift */; };
 		413D35022E489C25009F6F44 /* DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D35012E489C25009F6F44 /* DemoAppUITests.swift */; };
 		413D35042E489C25009F6F44 /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D35032E489C25009F6F44 /* DemoAppUITestsLaunchTests.swift */; };
+		413D35112E489CAA009F6F44 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D35102E489CAA009F6F44 /* Demo.swift */; };
+		413D35132E489DCA009F6F44 /* Demo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413D35122E489DCA009F6F44 /* Demo2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +42,14 @@
 		413D34E32E489C23009F6F44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		413D34E52E489C25009F6F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413D34E82E489C25009F6F44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		413D34EA2E489C25009F6F44 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		413D34ED2E489C25009F6F44 /* DemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoApp.xcdatamodel; sourceTree = "<group>"; };
 		413D34F32E489C25009F6F44 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413D34F72E489C25009F6F44 /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
 		413D34FD2E489C25009F6F44 /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413D35012E489C25009F6F44 /* DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITests.swift; sourceTree = "<group>"; };
 		413D35032E489C25009F6F44 /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		413D35102E489CAA009F6F44 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		413D35122E489DCA009F6F44 /* Demo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			children = (
 				413D34E12E489C23009F6F44 /* DemoAppApp.swift */,
 				413D34E32E489C23009F6F44 /* ContentView.swift */,
+				413D35102E489CAA009F6F44 /* Demo.swift */,
+				413D35122E489DCA009F6F44 /* Demo2.swift */,
 				413D34E52E489C25009F6F44 /* Assets.xcassets */,
-				413D34EA2E489C25009F6F44 /* Persistence.swift */,
 				413D34EC2E489C25009F6F44 /* DemoApp.xcdatamodeld */,
 				413D34E72E489C25009F6F44 /* Preview Content */,
 			);
@@ -263,9 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				413D34EB2E489C25009F6F44 /* Persistence.swift in Sources */,
 				413D34E42E489C23009F6F44 /* ContentView.swift in Sources */,
+				413D35132E489DCA009F6F44 /* Demo2.swift in Sources */,
 				413D34EE2E489C25009F6F44 /* DemoApp.xcdatamodeld in Sources */,
+				413D35112E489CAA009F6F44 /* Demo.swift in Sources */,
 				413D34E22E489C23009F6F44 /* DemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
