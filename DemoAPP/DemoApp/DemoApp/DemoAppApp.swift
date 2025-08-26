@@ -12,7 +12,7 @@ struct DemoAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView2()
+            ConcurencySwiftUI()
         }
     }
 }

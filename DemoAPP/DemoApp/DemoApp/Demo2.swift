@@ -58,17 +58,18 @@ class ViewModel: ObservableObject {
     }
 }
 
-struct ContentView2: View {
+struct SecionViewS: View {
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             if viewModel.isLoading {
                 ProgressView("Loading...")
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         
+
                         SectionView(title: "Posts", items: viewModel.posts.prefix(5).map { $0.title })
                         SectionView(title: "Users", items: viewModel.users.prefix(5).map { $0.name })
                         SectionView(title: "Comments", items: viewModel.comments.prefix(5).map { $0.body })
@@ -97,11 +98,15 @@ struct SectionView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 15) {
                     ForEach(items, id: \.self) { item in
-                        Text(item)
-                            .frame(width: 150, height: 80)
-                            .padding()
-                            .background(Color.blue.opacity(0.1))
-                            .cornerRadius(10)
+                        
+                        NavigationLink(destination: ZstackExample()) {
+                            
+                            Text(item)
+                                .frame(width: 150, height: 80)
+                                .padding()
+                                .background(Color.blue.opacity(0.1))
+                                .cornerRadius(10)
+                        }
                     }
                 }
             }
